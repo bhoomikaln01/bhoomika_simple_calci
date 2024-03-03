@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="border">
+            <!-- Header Section -->
+            <div class="header">
+                <div class="app-name">
+                    <h2>Calculator</h2>
+                    <span class="copyright">Made with Bhoomikaln</span>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="history hidden">
+                    <h2>bhoomi</h2>
+                    <hr>
+                    <span class="close fa fa-close"></span>
+                    <table>
+                        <thead>
+                            <th>resturant</th>
+                            <th>dish</th>
+                            <th>paid</th>
+                        </thead>
+                        <tbody id="historyList"></tbody>
+                    </table>
+                    <button class="clear-history" onclick="removeHistory()">
+                        <i class="fa fa-trash"></i>
+                        <span>hotel History</span>
+                    </button>
+                </div>
+            </div>
+            <!-- Display Section -->
+            <div class="display">
+                <h2 id="displayNumber">0</h2>
+            </div>
+            <!-- Button Section -->
+            <div class="button-container">
+                <div class="button-row">
+                    <div class="button-item clear">
+                        C
+                    </div>
+                    <div class="button-item negative">
+                        &PlusMinus;
+                    </div>
+                    <div class="button-item operator">
+                        +
+                    </div>
+                    <div class="button-item operator">
+                        -
+                    </div>
+                </div>
+                <div class="button-row">
+                    <div class="button-item">
+                        7
+                    </div>
+                    <div class="button-item">
+                        8
+                    </div>
+                    <div class="button-item">
+                        9
+                    </div>
+                    <div class="button-item operator">
+                        x
+                    </div>
+                </div>
+                <div class="button-row">
+                    <div class="button-item">
+                        4
+                    </div>
+                    <div class="button-item">
+                        5
+                    </div>
+                    <div class="button-item">
+                        6
+                    </div>
+                    <div class="button-item equals">
+                        &equals;
+                    </div>
+                </div>
+                <div class="button-row">
+                    <div class="button-item">
+                        1
+                    </div>
+                    <div class="button-item">
+                        2
+                    </div>
+                    <div class="button-item">
+                        3
+                    </div>
+                    <div class="button-item">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="./assets/script.js"></script>
+    <script src="./assets/storage.js"></script>
+    <script src="./assets/calculator.js"></script>
+</body>
+
+</html>
